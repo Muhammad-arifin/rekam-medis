@@ -1,0 +1,413 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+.sidebar {
+    width: 230x;
+    background: #030f1f;
+    color: #fff;
+    height: 200vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 15px 0;
+}
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+.sidebar ul li a:hover {
+    background: #02264e;
+}
+.content {
+    margin-left: 275px;
+    padding: 20px;
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: #f3efff;
+    border-bottom: 10px solid #ddd;
+}
+.header h1 {
+    margin: 0;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.profile .name {
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.profile a {
+    color: #030f1f;
+    text-decoration: none;
+}
+.profile a:hover {
+    color: #02264e;
+}
+.logout-button {
+    background: #02264e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.logout-button:hover {
+    background: #030f1f;
+}
+
+/* Ensure icons and text are aligned */
+ul li a {
+    display: flex;
+    align-items: center;
+}
+
+ul li a i {
+    margin-right: 10px; /* Add space between icon and text */
+}
+
+.dropdown-content a i {
+    margin-right: 10px;
+}
+
+
+.dropdown {
+    background-color: #02264e;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #030f1f;
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-content a {
+    padding-left: 30px;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    grid-template-rows: auto auto; /* Two rows with automatic height */
+    gap: 20px; /* Space between the sections */
+    padding: 20px;
+}
+
+.back-link {
+    grid-column: 1 / -1; /* Make the back link span the full width */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #02264e;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+
+/* Styling for each section */
+.container section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+}
+
+/* Headings for sections */
+.container section h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Table styles within sections */
+.container section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.container section table th,
+.container section table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.container section table th {
+    background-color: #f2f2f2;
+}
+
+/* Form inside the Resep Obat section */
+.container .resep-obat form {
+    margin-bottom: 20px;
+}
+
+.container .resep-obat label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+}
+.container .resep-obat form input {
+    display: block;
+    width: 150px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 15px;
+
+}
+
+.container .resep-obat select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.container .resep-obat button {
+    padding: 10px 15px;
+    background-color: #02264e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container .resep-obat button:hover {
+    background-color: #030f1f;
+}
+
+/* Ensure all sections have the same height */
+.biodata, .riwayat-berobat, .catatan-rekam-medis, .resep-obat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container section form,
+.container section table {
+    flex-grow: 1;
+}
+
+
+.catatan-rekam-medis {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.catatan-rekam-medis h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.catatan-rekam-medis ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.catatan-rekam-medis ul li {
+    margin-bottom: 15px;
+}
+
+.catatan-rekam-medis form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.catatan-rekam-medis form p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.catatan-rekam-medis form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.catatan-rekam-medis form button {
+    align-self: flex-start;
+    padding: 10px 15px;
+    background-color: #02264e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.catatan-rekam-medis form button:hover {
+    background-color: #030f1f;
+}
+
+.ay {
+    margin-left: px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ebebeb;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 20px 20px 25px rgba(46, 46, 46, 0.3);
+    border-radius: 5px;
+}
+.card h3 {
+    margin-top: 0;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.a {
+    background-color: #02264e;
+    color: white;
+    padding: 20px;
+    margin: 20px 0; 
+    box-shadow: 20px 20px 25px rgba(6, 0, 65, 0.3);
+    border-radius: 5px;
+}
+.a h3 {
+    margin-top: 0;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.b {
+    background-color: #006ce7;
+    color: white;
+    padding: 20px;
+    margin: 20px 0; 
+    box-shadow: 20px 20px 25px rgba(1, 18, 58, 0.3);
+    border-radius: 5px;
+}
+.b h3 {
+    margin-top: 0;
+}
+.c {
+    background-color: #828500;
+    color: white;
+    padding: 20px;
+    margin: 20px 0; 
+    box-shadow: 20px 20px 25px rgba(67, 75, 0, 0.3);
+    border-radius: 5px;
+}
+.c h3 {
+    margin-top: 0;
+}
+.d {
+    background-color: #8f0000;
+    color: white;
+    padding: 20px;
+    margin: 20px 0; 
+    box-shadow: 20px 20px 25px rgba(78, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.d h3 {
+    margin-top: 0;
+}
+.pagination {
+    display: flex;
+    margin: 20px 0;
+    margin-left: 100px;
+}
+
+.pagination ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+
+.pagination a,
+.pagination span {
+    display: block;
+    padding: 7px 10px;
+    text-decoration: none;
+    color: #02264e;
+    border: 1px solid #d2d6da;
+    border-radius: 2px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pagination a:hover {
+    background-color: #e9ecef;
+}
+
+.pagination .active span {
+    background-color: #0056b3;
+    color: #fff;
+    border-color: #0056b3;
+}
+
+.pagination .disabled span {
+    color: #6c757d;
+    border-color: #dee2e6;
+    cursor: not-allowed;
+}
